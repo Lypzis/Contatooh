@@ -15,7 +15,7 @@ before_install:
   - bower install
 
 before_script:
-  - grunt
+  - grunt --force
   - cd dist
 
 script: 
