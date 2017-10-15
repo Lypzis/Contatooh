@@ -20,21 +20,21 @@ module.exports = function(grunt){
 		},
 
 		usemin: {
-			html: 'dist/app/views/**/*.ejs'
+			html: 'dist/app/views/**/*.html'
 		},
 
 		useminPrepare: {
 			options: {
-				root: 'dist/public',
-				dest: 'dist/public'
+				root: 'dist/app',
+				dest: 'dist/app'
 			},
-			html: 'dist/app/views/**/*.ejs'
+			html: 'dist/app/views/**/*.html'
 		},
 
 		ngAnnotate: {
 			scripts: {
 				expand: true,
-				src: ['dist/public/js/**/*.js']
+				src: ['dist/app/js/**/*.js']
 			}
 		}
 	});

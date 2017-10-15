@@ -1,8 +1,0 @@
-// app/routes/home.js
-
-module.exports = function(app){
-	//app.get equivale ao verbo GET do http
-	var controller = app.controllers.home;
-	app.get('/', controller.index);
-	
-}
